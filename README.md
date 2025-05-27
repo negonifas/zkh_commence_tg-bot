@@ -102,8 +102,9 @@ python run.py
 │   └── ...
 ├── bot_logs/             # Логи работы бота
 ├── .venv/                # Виртуальное окружение
-
+```
 ---
+
 
 ## 🔄 Основные сценарии работы
 
@@ -135,6 +136,7 @@ python run.py
 
 ## 📄 Пример .env
 
+```text
 TOKEN=123456789:ABCDEF...
 ADMIN_TG_ID=123456789
 POSTGRES_USER=postgres
@@ -142,6 +144,7 @@ POSTGRES_PASSWORD=yourpassword
 POSTGRES_DB=yourdb
 SMTP_USER=your@mail.ru
 SMTP_PASSWORD=yourpassword
+```
 
 ---
 
