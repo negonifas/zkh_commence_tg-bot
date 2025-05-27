@@ -137,12 +137,19 @@ python run.py
 
 ```
 TOKEN=123456789:ABCDEF...
+
 ADMIN_TG_ID=123456789
+
 POSTGRES_USER=postgres
+
 POSTGRES_PASSWORD=yourpassword
+
 POSTGRES_DB=yourdb
+
 SMTP_USER=your@mail.ru
+
 SMTP_PASSWORD=yourpassword
+
 ```
 
 ---
