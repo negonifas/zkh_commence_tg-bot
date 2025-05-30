@@ -57,6 +57,41 @@ SMTP_PASSWORD=пароль_почты
 5. **(Опционально) Настройте Google Drive:**
 - Поместите файл `service_account.json` с сервисным аккаунтом Google в корень проекта.
 
+6. **Создайте базу данных PostgreSQL:**
+- Создайте новую базу данных.
+
+7. **В базе данных создайте таблицы:**
+- Выполните следующий SQL-код для создания необходимых таблиц:
+
+```sql
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    tel_number TEXT,
+    tg_id BIGINT,
+    tg_first_name TEXT,
+    tg_last_name TEXT,
+    tg_username TEXT,
+    tg_language_code TEXT,
+    tg_is_premium BOOLEAN
+);
+
+CREATE TABLE violation (
+    id SERIAL PRIMARY KEY,
+    tg_id BIGINT,
+    main_category TEXT,
+    violation_type TEXT,
+    address TEXT,
+    addition_date TIMESTAMP,
+    floor INTEGER,
+    entrance INTEGER,
+    status INTEGER,
+    notice_date DATE,
+    expiry_date DATE
+);
+```
+
 ---
 
 ## 🚀 Запуск
